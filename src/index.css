@@ -2,7 +2,13 @@
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
     @apply font-sans;
+
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
   }
 
   body {
