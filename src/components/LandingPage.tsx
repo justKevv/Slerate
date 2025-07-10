@@ -2,16 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, Users, Target, BarChart3, ArrowRight, Check } from "lucide-react";
 import BlurText from "./motion/blur-text"
-import { Bg3 } from "./backgrounds";
+import { BgSquares } from "./backgrounds";
 import GradientText from "./motion/gradient-text";
 import ShinyText from "./motion/shiny-text";
 
 export function LandingPage() {
     return (
-        <div className="dark">
-            {/* Background - Fixed behind everything */}
+        <div className="dark">            {/* Background - Fixed behind everything */}
             <div className="fixed left-0 top-0 -z-10 h-screen w-screen">
-                <Bg3 />
+                <BgSquares />
             </div>
 
             <div className="relative min-h-screen scroll-smooth">
@@ -29,9 +28,10 @@ export function LandingPage() {
                             <GradientText
                                 colors={["#3b82f6", "#8b5cf6", "#3b82f6"]} // blue to purple gradient
                                 animationSpeed={6}
+                                showBorder={false}
                                 className="inline text-4xl md:text-6xl font-bold"
                             >
-                                <b>Slerate</b>
+                                Slerate
                             </GradientText>
                         </div>
 

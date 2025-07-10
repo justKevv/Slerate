@@ -1,3 +1,5 @@
+import Squares from "./motion/squares";
+
 const Bg1 = () => {
   return (
     <div className="relative h-full w-full dark:bg-background">
@@ -43,6 +45,20 @@ const Bg6 = () => {
   );
 };
 
+const BgSquares = () => {
+  return (
+    <div className="relative h-full w-full bg-background dark:bg-background">
+      <Squares
+        direction="diagonal"
+        speed={0.5}
+        borderColor="rgba(100, 100, 100, 0.3)"
+        squareSize={40}
+        hoverFillColor="rgba(100, 100, 100, 0.1)"
+      />
+    </div>
+  );
+};
+
 export const backgroundItems = [
   {
     name: "Background 1",
@@ -68,7 +84,11 @@ export const backgroundItems = [
     name: "Background 6",
     component: <Bg6 />,
   },
+  {
+    name: "Background Squares",
+    component: <BgSquares />,
+  },
 ] as const;
 
 // Export individual background components for direct use
-export { Bg1, Bg2, Bg3, Bg4, Bg5, Bg6 };
+export { Bg1, Bg2, Bg3, Bg4, Bg5, Bg6, BgSquares };
