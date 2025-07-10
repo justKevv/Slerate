@@ -4,6 +4,7 @@ import { TrendingUp, Users, Target, BarChart3, ArrowRight, Check } from "lucide-
 import BlurText from "./motion/blur-text"
 import { Bg3 } from "./backgrounds";
 import GradientText from "./motion/gradient-text";
+import ShinyText from "./motion/shiny-text";
 
 export function LandingPage() {
     return (
@@ -39,12 +40,9 @@ export function LandingPage() {
                             Increase conversions, automate follow-ups, and close more deals faster than ever before.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                                Get Started
+                            <Button size="lg" variant="default" className="bg-background outline-1 text-white hover:bg-zinc-900 ">
+                                <ShinyText text="Get Started!" disabled={false} speed={3} className='custom-class' />
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </Button>
-                            <Button variant="outline" size="lg">
-                                Watch Demo
                             </Button>
                         </div>
                         <div className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 justify-center">
