@@ -41,7 +41,7 @@ export function LandingPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" variant="default" className="bg-background outline-1 text-white hover:bg-zinc-900 ">
-                                <ShinyText text="Get Started!" disabled={false} speed={3} className='custom-class' />
+                                <ShinyText text="Get Started!" disabled={false} speed={3} className='text-zinc-400' />
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
                         </div>
@@ -59,7 +59,7 @@ export function LandingPage() {
                 </section>
 
                 {/* Features Section */}
-                <section className="container mx-auto px-4 py-16 md:py-24">
+                <section className="container mx-auto px-4 py-16 md:py-24 ">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                             Powerful Features for Sales Success
@@ -70,7 +70,7 @@ export function LandingPage() {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 outline-1 outline-zinc-800">
                             <CardHeader className="text-center">
                                 <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <TrendingUp className="h-8 w-8 text-blue-600 dark:text-blue-400" />
@@ -99,7 +99,7 @@ export function LandingPage() {
                             </CardContent>
                         </Card>
 
-                        <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 outline-1 outline-zinc-800">
                             <CardHeader className="text-center">
                                 <div className="bg-green-100 dark:bg-green-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
@@ -128,7 +128,7 @@ export function LandingPage() {
                             </CardContent>
                         </Card>
 
-                        <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 outline-1 outline-zinc-800">
                             <CardHeader className="text-center">
                                 <div className="bg-purple-100 dark:bg-purple-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Target className="h-8 w-8 text-purple-600 dark:text-purple-400" />
