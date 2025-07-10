@@ -30,7 +30,7 @@ export function LandingPage() {
                                 animationSpeed={6}
                                 className="inline text-4xl md:text-6xl font-bold"
                             >
-                                Slerate
+                                <b>Slerate</b>
                             </GradientText>
                         </div>
 
