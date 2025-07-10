@@ -6,6 +6,7 @@ import { BgSquares } from "./backgrounds";
 import GradientText from "./motion/gradient-text";
 import ShinyText from "./motion/shiny-text";
 import FadeContent from "./motion/fade-content";
+import StarBorder from './motion/star-border';
 
 export function LandingPage() {
     return (
@@ -160,45 +161,51 @@ export function LandingPage() {
                             </CardContent>
                         </Card>
                     </div>
-                </section>
-
-                {/* CTA Section */}
+                </section>                {/* CTA Section */}
                 <section className="container mx-auto px-4 py-16 md:py-24">
-                    <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-center text-white">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                            Ready to Transform Your Sales?
-                        </h2>
-                        <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                            Join thousands of sales teams who have already boosted their performance with Slerate.
-                            Start your free trial today and see results in just 7 days.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                                Get Started
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                            </Button>
-                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-                                Schedule Demo
-                            </Button>
+                    <StarBorder
+                        as="div"
+                        className="w-full"
+                        color="magenta"
+                        speed="6s"
+                        thickness={1}
+                    >
+                        <div className="rounded-2xl p-8 md:p-12 text-center text-white w-full">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                                Ready to Transform Your Sales?
+                            </h2>
+                            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                                Join thousands of sales teams who have already boosted their performance with Slerate.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                                    Get Started
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                                    Schedule Demo
+                                </Button>
+                            </div>
+                            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm opacity-80">
+                                <div className="flex items-center gap-2">
+                                    <Check className="h-4 w-4" />
+                                    <span>Free 14-day trial</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <Check className="h-4 w-4" />
+                                    <span>No setup fees</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <Check className="h-4 w-4" />
+                                    <span>Cancel anytime</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm opacity-80">
-                            <div className="flex items-center gap-2">
-                                <Check className="h-4 w-4" />
-                                <span>Free 14-day trial</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Check className="h-4 w-4" />
-                                <span>No setup fees</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Check className="h-4 w-4" />
-                                <span>Cancel anytime</span>
-                            </div>
-                        </div>
-                    </div>
+                    </StarBorder>
                 </section>
 
-                {/* Footer */}            <footer className="container mx-auto px-4 py-8 text-center text-gray-500 dark:text-gray-400">
+                {/* Footer */}
+                <footer className="container mx-auto px-4 py-8 text-center text-gray-500 dark:text-gray-400">
                     <p>&copy; 2025 Slerate Sales Boost. All rights reserved.</p>
                 </footer>
             </div>
