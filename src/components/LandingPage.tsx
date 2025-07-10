@@ -5,6 +5,7 @@ import BlurText from "./motion/blur-text"
 import { BgSquares } from "./backgrounds";
 import GradientText from "./motion/gradient-text";
 import ShinyText from "./motion/shiny-text";
+import FadeContent from "./motion/fade-content";
 
 export function LandingPage() {
     return (
@@ -25,14 +26,16 @@ export function LandingPage() {
                                 direction="top"
                                 className="inline"
                             />
-                            <GradientText
-                                colors={["#3b82f6", "#8b5cf6", "#3b82f6"]} // blue to purple gradient
-                                animationSpeed={6}
-                                showBorder={false}
-                                className="inline text-4xl md:text-6xl font-bold"
-                            >
-                                Slerate
-                            </GradientText>
+                            <FadeContent blur={true} duration={700} easing="ease-out" initialOpacity={0}>
+                                <GradientText
+                                    colors={["#3b82f6", "#8b5cf6", "#3b82f6"]} // blue to purple gradient
+                                    animationSpeed={6}
+                                    showBorder={false}
+                                    className="inline text-4xl md:text-6xl font-bold"
+                                >
+                                    <b>Slerate</b>
+                                </GradientText>
+                            </FadeContent>
                         </div>
 
                         <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
